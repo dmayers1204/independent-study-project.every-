@@ -12,21 +12,21 @@ The every() method is an native array method used to iterate over arrays. It is 
 Hi, my name is Derrick, I'm in need of some boots for a winter party this weekend. I will be going to the "TopDollar" store to shop during the "New Beginnings Special Event". Note, the condition of the event is: all customers must have the funds to be able to purchase the highest set of pair of boots, even if your into another kind of boots. This is an exclusive event with limited inventory, first granted access first served. 
 Recently, I've learned in class a new native array method known as ".every()". I hope to use this method to determine if I'll  be able to purchase boots from the "New Beginnings Special Event". Please see code below:
 
-![Alt text](./image-5.png)
+
 
 
 "Case # 2"
 
 Hello, my name is Justin, I'm currently working as an elementry assistant administrator. Its coming to the end of the school year and many students are expressing an interest in taking a field trip to the "New York State Zoo". I've been givin a direct order by the principal that there must be 20 students per grade level to receieve funding for the trip. In addition, the principal requested for an admin supervisor to create the "studentCode" for the field trip to occur. To ensure the the "studentCode" is accounted for, I've been givin the assignment to use the code to determine if on the day of the event, the bus can leave the school for the field trip by the code conditions being met.    
 
-![Alt text](./image-7.png)
+
 
 "Case # 3"
 
 Howdy, my name is Mayers, I'm currently studying chemisty, particularly elements. I've created a list of different elements to help me memorize essential elements from the periodic table. If the elements provided in the list are truly essential, the every method will return a true boolean value, otherwise false.
 
 
- ![Alt text](./image-1.png)
+
 
 
 ## Algorithm Description
@@ -90,9 +90,7 @@ let elementsBooleanValue = elements.every((ele) => ele.length >= 4 && ele.length
 console.log(elementsBooleanValue); 
 ```
 
-## Big O Evaluation
-![Alt text](./image.png) 
-  
+## Big "O" Evaluation
 
 Big-O notation is a form of measuring the algorithmic complexity of a function or algorithm in the worst-case scenario. This can either analyze the maximum amount of possible time or memory space needed to solve a particular problem.
 
@@ -103,23 +101,26 @@ In summary, for (Case # 1), (Case # 2), & (Case # 3); the time complexity is O(n
 The time complexity of the code is determined by the every method, which iterates over each element in the array and applies the provided callback function. 0(n) --> operation remains the same regardless of how many elements(size length) is given to the specific function. 
 Worst Case: In the worst case, if the entire array needs to be traversed (all elements are within the condition), the time complexity is O(n), where n is the number of elements in the array. 
 
+```js
+// operation remains the same regardless of how many elements(size length) is given to the specific function.
+let boolean = arr.every((boots) => boots.cost <= funds) - 0(n);
+let anotherBoolean = arr.every((student) >= student.totalStudents >= studentCode) - 0(n); 
+let sameBoolean = elements.every((ele) => ele.length >= 4 && ele.length <= 9) - 0(n); 
+```
+
 ### Space Complexity
 
 The space complexity highly the highly efficient --> O(1)
 The space complexity of the codes is constant, O(1), because the algorithms do use any additional data structures that grow with the input size. The only memory used is for the parameters, and or the internal variables (like boots in the callback function), and these remain constant regardless of the array size.
  
 ## Use Cases
-The every method can be used not only in Javascipt, but also in real life situations similar to the cases used for this project. The every method on an array has proven the capabilites and the magnitude at which how vital it can be when testing certain conditions to be true of false. e.g(purchasing items within a limit, checking if count set of people meet a specific condition , and checking a list for accuracy. 
+The every method can be used not only in Javascipt, but also in real life situations similar to the cases used for this project. The every method on an array has proven the capabilites and the magnitude at which how vital it can be when testing certain conditions to be true of false. e.g(purchasing items within a limit, checking if count set of people meet a specific condition , and checking a list for accuracy). 
 
 ## Edge Cases and Concerns
 The callbackFn depending on how its being conditioned can mutate the original inputed array. The slice method when used with every method can alter the position of the array by removing elements and causing shift in element position(s) as well creating a new length of an array.    
 
 ## Citations
 
-[mdn - Every Method] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every);
+[mdn - Every Method] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
-[Code Academy] (https://www.codecademy.com/resources/docs/javascript/arrays/every);
-
-[BLOX Digital - Provided Image] (https://www.nny360.com/communitynews/communitygiving/thompson-park-zoo-kicks-off-angels-for-animals-campaign/article_d9e40368-c2c7-55fd-8570-dd6f07299afc.html);
-
-[Google Images] - 
+[Code Academy] (https://www.codecademy.com/resources/docs/javascript/arrays/every)

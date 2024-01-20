@@ -42,9 +42,11 @@ let elementsBooleanValue = elements.every((ele) => ele.length >= 4 && ele.length
 //The callback function (ele) => ele.length >= 4 && ele.length <= 9 is applied to each element in the array. 
 //The condition checks if the length of each element is greater than or equal to 4 and less than or equal to 9. 
 
-console.log(elementsBooleanValue); 
+
 //The variable elementsBooleanValue will be true if every element in the array satisfies the condition, and false otherwise. 
 //Logs the resulting boolean value.
+console.log(elementsBooleanValue); 
+
 
 
 
